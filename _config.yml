@@ -6,5 +6,5 @@ baseurl: "http://kristenzirkler.github.io/yscouts-demo"
 # Sass
 sass:
   sass_dir: scss
-  style: :expanded
+  style: :compressed
   line_numbers: true

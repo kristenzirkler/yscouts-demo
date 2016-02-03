@@ -1,6 +1,6 @@
 <div class="sample-font {{ include.layout }}">
 	{% if include.headline-font %}
-	<h1 style="font-family:'{{ include.headline-font }}';">{% if include.layout != 'combo' %}<strong>{{ include.headline-font }}: </strong>{% endif %}Transforming how leaders {% if include.layout == 'combo' %} and companies <strong>connect to work</strong> that matters{% endif %}</h1>
+	<h1 style="font-family:'{{ include.headline-font }}';{{ include.header-font-style }}">{% if include.layout != 'combo' %}<strong>{{ include.headline-font }}: </strong>{% endif %}Transforming how leaders {% if include.layout == 'combo' %} and companies <strong>connect to work</strong> that matters{% endif %}</h1>
 	{% endif %}
 	{% if include.body-font %}
 	<p style="font-family:'{{ include.body-font }}';{{ include.body-font-style }}">{% if include.layout != 'combo' %}<strong>{{ include.body-font }}: </strong>{% endif %}Harvard Business Review reports that 80%{% if include.layout == 'combo' %}  of employee turnover is a result of bad hiring decisions. <strong>One major factor</strong> that contributes to bad hiring decisions is not knowing <u>exactly who you</u> are looking to find. This is where we come in.{% endif %}</p>

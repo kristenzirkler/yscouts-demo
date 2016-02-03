@@ -1,0 +1,159 @@
+$slide-height: 650px;
+
+#it-comes-down-to-impact {
+	background-color: transparent !important;
+	.grid-container {
+		max-width: 18000px;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.grid-100,.mobile-grid-100, .tablet-grid-100 {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.client-slider {
+    position: relative;
+	.slide-callout {
+		padding: 30px 0 0 30px;
+		color: $white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		span {
+			font-size: 12px;
+			letter-spacing: 5px;
+			opacity: .8;
+			display: block;
+			font-weight: normal;
+			font-family: $accent-font;
+		}
+	}
+}
+.client-slide {
+	position: relative;
+	height: $slide-height;
+	width: 100%;
+	overflow: hidden;
+	background-color: $black;
+	.client-slider-inner {
+		max-width: 1200px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    margin: 0 auto;
+	    position: relative;
+	    z-index: 2;
+	}
+	.client-slider-img {
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		z-index: 1;
+		opacity: .4;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-clip: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.client-slider-content {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.client-quote {
+		color: $white;
+		max-width: 450px;
+		padding-top: 100px;
+		font-size: 16px;
+		margin-bottom: 20px;
+		position: relative;
+		span {
+			font-size: 26px;
+			line-height: 30px;
+			display: block;
+		}
+		&:before {
+			content: '“';
+			font-size: 110px;
+			font-family: $font-family;
+			position: absolute;
+			left: -50px;
+			top: 140px;
+			opacity: .7;
+
+		}
+	}
+	.client-name {
+		color: $white;
+		font-size: 24px;
+		padding-bottom: 35px;
+		span {
+			font-size: 14px;
+			line-height: 18px;
+			display: block;
+			margin-top: 5px;
+			font-weight: normal;
+			font-family: $accent-font;
+		}
+	}
+	.client-slider-cta {
+		display: inline-block;
+		background: rgba($white,.9);
+		text-align: center;
+		padding: 0 25px;
+		line-height: 50px;
+		font-size: 16px;
+		color: $main-color;
+		position: relative;
+		z-index: 200;
+		&:hover {
+			color: $main-color;
+			background: $white;
+		}
+
+	}
+	.client-slider-content {	
+		padding-bottom: 100px;
+	}
+}
+/* Portrait tablet to landscape */
+@media (min-width: 500px) {
+
+.client-slide {
+	.client-quote {
+		padding-top: 150px;
+		font-size: 18px;
+		span {
+			font-size: 32px;
+			line-height: 35px;
+		}
+		&:before {
+			font-size: 180px;
+			left: -80px;
+			top: 220px;
+		}
+	}
+}
+
+}
+
+// Responsive
+@media all and (min-width: 768px) {
+
+
+.client-slide {
+	.client-slider-img {
+		opacity: .8;
+	}
+
+}
+
+}
+
+

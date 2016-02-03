@@ -1,0 +1,130 @@
+.ys-button-main {
+	margin: 0;
+	font-family: $font-family;
+	text-transform: none;
+}
+.dark cite, .dark, .dark .lead {
+    color: $font-color;
+}
+.su-column-size-1-2 {
+	p {
+		max-width: 400px;
+	}
+}
+.hero-inner {
+	.hero-title, .hdb {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.grid-container {
+    max-width: 900px;
+}
+// Header Navigation
+#navigation {
+	font-family: $accent-font;
+}
+#menu-menu-1 {
+	li:nth-child(2) a:after {
+		display: none;
+
+	}
+}
+.ut-home-link {
+	display: none;
+	opacity: 0;
+}
+.sub-menu {
+	opacity: 0;
+}
+.site-logo {
+	opacity: 1;
+	@include transition(all .5s);
+	img {
+	    width: 150px;
+	}
+}
+.ha-header {
+	.grid-container {
+	    max-width: 2000px;
+	}
+}
+.ha-header.ha-transparent:hover {
+	background: none;
+}
+.ha-transparent {
+	#navigation ul li a,
+	#navigation ul li a:hover,
+	#navigation ul li.current-menu-item:not(.current_page_parent) a, 
+	#navigation ul li.current_page_item:not(.current_page_parent) a,
+	#navigation ul li.current-menu-item:not(.current_page_parent) a:hover, 
+	#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
+		color: #fff;
+	}
+	.site-logo {
+		background-image: url('http://104.236.213.243/wp-content/uploads/2016/01/yscouts-logo-white.png');
+		background-repeat: no-repeat;
+		background-size: 150px 41px;
+		background-position: 0 21px;
+		img {
+			opacity: 0;
+		}
+	}
+
+}
+.home {
+	.ha-transparent {
+		.site-logo {
+			opacity: 0;
+		}
+		.ut-mm-button:before,
+		#navigation ul li a,
+		#navigation ul li a:after,
+		#navigation ul li a:hover,
+		#navigation ul li.current-menu-item:not(.current_page_parent) a, 
+		#navigation ul li.current_page_item:not(.current_page_parent) a,
+		#navigation ul li.current-menu-item:not(.current_page_parent) a:hover, 
+		#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
+			color: #444444;
+		}
+
+	}
+}
+// Home Page
+.hero-inner {
+	.hero-btn {
+		color: #a2a2a2;
+		opacity: .6;
+		@include transition(all .5);
+		img {
+			width: 130px;
+			@include transition(all .5);
+		}
+		i {
+			font-size: 20px;
+			margin-top: 10px;
+			display: block;
+			@include transition(all .5);
+		}
+		&:hover {
+			color: #a2a2a2;
+			opacity: 1;
+		}
+	}
+}
+.hero-title span:not(.ut-word-rotator),
+.hero-title span {
+	font-weight: bold;
+	color: #000 !important;
+}
+.hero-btn-holder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.hero-description-bottom {
+	font-size: 16px;
+    margin-bottom: 80px;
+}
