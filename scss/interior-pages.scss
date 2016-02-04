@@ -105,6 +105,19 @@
 }
 
 
+// Careers 
+.yc-pagedivider {
+	text-align: center;
+	font-size: 36px;
+	padding-bottom: 50px;
+	span {
+		display: block;
+	}
+	&.leader {
+		padding-top: 100px;
+	}
+}
+
 // Responsive
 @media all and (min-width: 768px) {
 

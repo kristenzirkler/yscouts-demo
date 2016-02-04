@@ -1,5 +1,16 @@
 $slide-height: 650px;
-
+/*
+.page-id-134 {
+	.grid-container {
+		max-width: 20000px;
+		margin: 0;
+		padding: 0;
+	}
+	#primary {
+	    padding-top: 0;
+	}
+}
+*/
 #it-comes-down-to-impact {
 	background-color: transparent !important;
 	.grid-container {
@@ -31,6 +42,11 @@ $slide-height: 650px;
 			display: block;
 			font-weight: normal;
 			font-family: $accent-font;
+		}
+	}
+	&.clients-page {
+		.slide-callout {
+			display: none;
 		}
 	}
 }

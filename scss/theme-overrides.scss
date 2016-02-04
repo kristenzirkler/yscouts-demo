@@ -2,6 +2,14 @@
 	margin: 0;
 	font-family: $font-family;
 	text-transform: none;
+	&.xlarge {
+		font-size: 24px;
+		margin: 0 auto;
+		display: block;
+		line-height: 60px;
+		height: 60px;
+		max-width: 300px;
+	}
 }
 .dark cite, .dark, .dark .lead {
     color: $font-color;
@@ -25,10 +33,9 @@
 #navigation {
 	font-family: $accent-font;
 }
-#menu-menu-1 {
+#menu-header-nav {
 	li:nth-child(2) a:after {
 		display: none;
-
 	}
 }
 .ut-home-link {
@@ -89,6 +96,31 @@
 			color: #444444;
 		}
 
+	}
+}
+// Footer 
+.footer-content {
+	display: none;
+}
+.ut-footer-area .shortcodes-ultimate-2 {
+    float: right;
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+#menu-footer {
+	overflow: hidden;
+	li {
+		float: left;
+		border: none;
+		margin-right: 15px;
+		font-size: 14px;
+		font-family: $accent-font;
+		&:before {
+			display: none;
+		}
+	}
+	a {
+		color: $white;
 	}
 }
 // Home Page
