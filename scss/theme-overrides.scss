@@ -1,7 +1,12 @@
+body {
+	font-family: $font-family;
+	color: $font-color;
+}
 .ys-button-main {
 	margin: 0;
-	font-family: $font-family;
-	text-transform: none;
+	font-family: $accent-font;
+	font-weight: bold;
+	text-transform: uppercase;
 	&.xlarge {
 		font-size: 24px;
 		margin: 0 auto;
@@ -13,6 +18,9 @@
 }
 .dark cite, .dark, .dark .lead {
     color: $font-color;
+}
+.light .ut-left-footer-area, .light .ut-right-footer-area {
+	background: none;
 }
 .su-column-size-1-2 {
 	p {
@@ -34,9 +42,13 @@
 	font-family: $accent-font;
 }
 #menu-header-nav {
-	li:nth-child(2) a:after {
+	//li:nth-child(2) a:after {
+	li a:after {
 		display: none;
 	}
+}
+#navigation ul li a {
+	font-size: 14px;
 }
 .ut-home-link {
 	display: none;
@@ -93,7 +105,7 @@
 		#navigation ul li.current_page_item:not(.current_page_parent) a,
 		#navigation ul li.current-menu-item:not(.current_page_parent) a:hover, 
 		#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
-			color: #444444;
+			color: #fff;
 		}
 
 	}
@@ -107,12 +119,43 @@
     margin-bottom: 0;
     margin-top: -10px;
 }
+.ut-footer-area .widget_recent_entries {
+	.widget-title {
+		font-size: 14px;
+		font-family: $accent-font;
+		font-weight: bold;
+	}
+	a {
+		font-size: 12px;
+		color: $white;
+		font-family: $accent-font;
+	}
+}
+.ut-footer-dark .ut-footer-area .widget_categories li, 
+.ut-footer-dark .ut-footer-area .widget_pages li, 
+.ut-footer-dark .ut-footer-area .widget_nav_menu li, 
+.ut-footer-dark .ut-footer-area .widget_recent_entries li, 
+.ut-footer-dark .ut-footer-area .widget_recent_comments li, 
+.ut-footer-dark .ut-footer-area .widget_meta li, 
+.ut-footer-dark .ut-footer-area .widget_archive li {
+	border: none;
+	padding-left: 0;
+	&:before {
+		display: none;
+	}
+
+	a {
+		color: $white;
+	}
+
+}
 #menu-footer {
 	overflow: hidden;
 	li {
 		float: left;
 		border: none;
 		margin-right: 15px;
+		padding-left: 0;
 		font-size: 14px;
 		font-family: $accent-font;
 		&:before {
@@ -126,29 +169,30 @@
 // Home Page
 .hero-inner {
 	.hero-btn {
-		color: #a2a2a2;
-		opacity: .6;
+		color: #fff;
+		border: none;
+		background: none;
 		@include transition(all .5);
 		img {
 			width: 130px;
 			@include transition(all .5);
 		}
 		i {
-			font-size: 20px;
+			font-size: 40px;
 			margin-top: 10px;
 			display: block;
 			@include transition(all .5);
 		}
 		&:hover {
-			color: #a2a2a2;
-			opacity: 1;
+			color: #fff;
+			//opacity: 1;
 		}
 	}
 }
 .hero-title span:not(.ut-word-rotator),
 .hero-title span {
 	font-weight: bold;
-	color: #000 !important;
+	color: #fff !important;
 }
 .hero-btn-holder {
     position: absolute;

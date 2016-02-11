@@ -45,7 +45,7 @@ $slide-height: 650px;
 		}
 	}
 	&.clients-page {
-		.slide-callout {
+		.slide-callout, .client-slider-cta {
 			display: none;
 		}
 	}
@@ -119,6 +119,9 @@ $slide-height: 650px;
 		}
 	}
 	.client-slider-cta {
+		font-family: $accent-font;
+		font-weight: bold;
+		text-transform: uppercase;
 		display: inline-block;
 		background: rgba($white,.9);
 		text-align: center;

@@ -1,0 +1,28 @@
+.post {
+  h2 {
+    font-size: 30px;
+    text-transform: none;
+  }
+  .ut-sticky, .author-links, .permalink, .edit-link, .comments-link {
+    display: none;
+  }
+  .date-format {
+    text-align: center;
+  }
+  .entry-content {
+    line-height: 26px;
+  }
+}
+.blog {
+  .grid-container {
+    max-width: 2000px;
+  }
+  .sidebar, .widget-title {
+    font-family: $accent-font;
+    font-size: 14px;
+  }
+  .widget-title {
+    font-weight: bold;
+  }
+
+}
