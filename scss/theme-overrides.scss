@@ -29,7 +29,7 @@ body {
 }
 .hero-inner {
 	.hero-title, .hdb {
-		max-width: 600px;
+		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -81,22 +81,10 @@ body {
 	#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
 		color: #fff;
 	}
-	.site-logo {
-		background-image: url('http://104.236.213.243/wp-content/uploads/2016/01/yscouts-logo-white.png');
-		background-repeat: no-repeat;
-		background-size: 150px 41px;
-		background-position: 0 21px;
-		img {
-			opacity: 0;
-		}
-	}
 
 }
 .home {
 	.ha-transparent {
-		.site-logo {
-			opacity: 0;
-		}
 		.ut-mm-button:before,
 		#navigation ul li a,
 		#navigation ul li a:after,
@@ -172,13 +160,11 @@ body {
 		color: #fff;
 		border: none;
 		background: none;
+		font-family: $font-family;
+		text-transform: none;
 		@include transition(all .5);
-		img {
-			width: 130px;
-			@include transition(all .5);
-		}
 		i {
-			font-size: 40px;
+			font-size: 55px;
 			margin-top: 10px;
 			display: block;
 			@include transition(all .5);
