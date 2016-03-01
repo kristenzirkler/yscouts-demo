@@ -45,7 +45,7 @@
     
     <?php if( ut_return_csection_config('ut_activate_csection' , 'on') == 'on' ) : ?>
     
-    <section id="contact-section" data-effect="fadeIn" class="animated contact-section <?php echo $ut_csection_parallax; ?> <?php echo $ut_csection_skin; ?> <?php echo $ut_csection_map_class; ?> <?php echo $ut_section_video_class; ?>">         
+    <section id="contact-section" data-effect="fadeIn" class="animated contact-section <?php echo $ut_csection_parallax; ?> <?php echo $ut_csection_skin; ?> <?php echo $ut_csection_map_class; ?> <?php echo $ut_section_video_class; ?>">   		
     
     <a class="ut-offset-anchor" id="section-contact"></a> 
         
@@ -70,11 +70,11 @@
         <?php if( $ut_csection_overlay == 'on' ) : ?>
         
         <div class="parallax-overlay <?php echo $ut_csection_overlay_pattern; ?> <?php echo ot_get_option( 'ut_csection_overlay_pattern_style' , 'style_one' ); ?>">
-        
+		
         <?php endif; ?>
         
         <div class="grid-container parallax-content">
-            
+        	
             <?php if( !empty($ut_csection_header_slogan) || !empty($ut_csection_header_expertise_slogan) ) : ?>
             
             <!-- parallax header -->
@@ -82,11 +82,11 @@
                 <header class="parallax-header <?php echo $ut_csection_header_style; ?>">
                     
                     <?php if( !empty($ut_csection_header_slogan) ) : ?>
-                        <h2 class="parallax-title"><span><?php echo do_shortcode( ut_translate_meta($ut_csection_header_slogan) ); ?></span></h2>
+                    	<h2 class="parallax-title"><span><?php echo do_shortcode( ut_translate_meta($ut_csection_header_slogan) ); ?></span></h2>
                     <?php endif; ?>
                     
                     <?php if( !empty($ut_csection_header_expertise_slogan) ) : ?>
-                        <p class="lead"><?php echo do_shortcode( ut_translate_meta($ut_csection_header_expertise_slogan) ); ?></p>
+                    	<p class="lead"><?php echo do_shortcode( ut_translate_meta($ut_csection_header_expertise_slogan) ); ?></p>
                     <?php endif; ?>
                     
                 </header>
@@ -122,33 +122,33 @@
                     <!-- contact form-holder -->
                     <div class="<?php echo $ut_right_csection_content_area_width; ?>">
                         <div class="ut-right-footer-area clearfix">
-                            
+                        	
                             <?php echo do_shortcode(wpautop($ut_right_csection_content_area)); ?>
                                 
                         </div>
                     </div><!-- close contact-form-holder -->
-                    
+                	
                     <?php endif; ?>                    
                     
                 </div>
             </div><!-- close contact wrap -->
             
             
-        </div><!-- close container -->
+		</div><!-- close container -->
         
         <?php if( $ut_csection_overlay == 'on' ) : ?>
         
         </div><!-- parallax overlay -->
-        
+		
         <?php endif; ?>
         
-    </section>
+	</section>
     
     <div class="clear"></div>
     
     <?php endif; //#ut_activate_csection ?>    
                 
-    <!-- Footer Section -->
+	<!-- Footer Section -->
     <footer class="footer <?php echo ot_get_option('ut_footer_skin' , 'ut-footer-light'); ?>">        
         
         <?php get_sidebar( 'footer' ); ?>                
@@ -156,7 +156,7 @@
         <?php if( ut_return_csection_config('ut_show_scroll_up_button' , 'on') == 'on' ) : ?>
         
             <a href="#top" class="toTop"><i class="fa fa-angle-double-up"></i></a>
-        
+    	
         <?php endif; ?>        
         
         <div class="footer-content">        
@@ -204,18 +204,18 @@
             </div><!-- close container -->        
         </div><!-- close footer content -->
         
-    </footer><!-- close footer -->
+	</footer><!-- close footer -->
         
-    <?php ut_after_footer_hook(); // action hook, see inc/ut-theme-hooks.php ?>
-    
+   	<?php ut_after_footer_hook(); // action hook, see inc/ut-theme-hooks.php ?>
+	
     <?php wp_footer(); ?>    
     
-    <script type="text/javascript">
+	<script type="text/javascript">
     /* <![CDATA[ */        
         
-        <?php ut_java_footer_hook(); // action hook, see inc/ut-theme-hooks.php ?> 
-        
-        <?php if( ot_get_option('ut_google_analytics') ) : ?>
+		<?php ut_java_footer_hook(); // action hook, see inc/ut-theme-hooks.php ?> 
+		
+		<?php if( ot_get_option('ut_google_analytics') ) : ?>
           
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -224,9 +224,9 @@
 
           ga('create', '<?php echo stripslashes( ot_get_option('ut_google_analytics') ); ?>', 'auto');
           ga('send', 'pageview');
-          
-        <?php endif; ?>
-             
+		  
+		<?php endif; ?>
+		     
      /* ]]> */
     </script>    
     
