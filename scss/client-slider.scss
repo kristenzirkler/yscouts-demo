@@ -97,7 +97,7 @@ $slide-height: 650px;
 		&:before {
 			content: '“';
 			font-size: 110px;
-			font-family: $font-family;
+			font-family: Georgia, serif;
 			position: absolute;
 			left: -50px;
 			top: 140px;
@@ -154,7 +154,7 @@ $slide-height: 650px;
 		}
 		&:before {
 			font-size: 180px;
-			left: -80px;
+			left: -90px;
 			top: 220px;
 		}
 	}

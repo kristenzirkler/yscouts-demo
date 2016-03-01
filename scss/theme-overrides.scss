@@ -30,7 +30,7 @@ body {
 }
 .hero-inner {
 	.hero-title, .hdb {
-		max-width: 700px;
+		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -70,6 +70,7 @@ body {
 	    max-width: 2000px;
 	}
 }
+
 .ha-header.ha-transparent:hover {
 	background: none;
 }
@@ -80,7 +81,7 @@ body {
 	#navigation ul li.current_page_item:not(.current_page_parent) a,
 	#navigation ul li.current-menu-item:not(.current_page_parent) a:hover, 
 	#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
-		color: #fff;
+		color: #444;
 	}
 
 }
@@ -94,11 +95,12 @@ body {
 		#navigation ul li.current_page_item:not(.current_page_parent) a,
 		#navigation ul li.current-menu-item:not(.current_page_parent) a:hover, 
 		#navigation ul li.current_page_item:not(.current_page_parent) a:hover {
-			color: #fff;
+			color: #444;
 		}
 
 	}
 }
+
 // Footer 
 .footer-content {
 	display: none;
@@ -158,7 +160,7 @@ body {
 // Home Page
 .hero-inner {
 	.hero-btn {
-		color: #fff;
+		color: #444;
 		border: none;
 		background: none;
 		font-family: $font-family;
@@ -171,7 +173,7 @@ body {
 			@include transition(all .5);
 		}
 		&:hover {
-			color: #fff;
+			color: #444;
 			//opacity: 1;
 		}
 	}
@@ -179,7 +181,7 @@ body {
 .hero-title span:not(.ut-word-rotator),
 .hero-title span {
 	font-weight: bold;
-	color: #fff !important;
+	color: #444 !important;
 }
 .hero-btn-holder {
     position: absolute;
@@ -187,7 +189,8 @@ body {
     left: 0;
     right: 0;
 }
-.hero-description-bottom {
-	font-size: 16px;
+.hero-description-bottom p {
+	font-size: 24px;
+	line-height: 33px;
     margin-bottom: 80px;
 }
