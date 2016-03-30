@@ -12,6 +12,35 @@ meta-description: Client Slider.
 <br><br>-
 <br><br>-
 
+<p><a href="#" rel="video-link" class="ut-btn ys-button-main theme-btn large " data-videoid="s5NvFk0wp0U">Watch Video</a></p>
+    <div id="video-modal" class="video-modal" style="display:none;">
+        <button class="video-close" rel="video-modal-close">Close</button>
+        <iframe allowfullscreen="" src="" frameborder="0" height="100%" width="100%"></iframe>
+    </div><!-- /.video-modal -->
+
+<script>
+$(document).ready(function(){
+  // Video Modal
+  $('[rel="video-link"]').click(function(event) {
+    event.preventDefault();
+    var videoID = $(this).attr('data-videoid');
+    $('#video-modal').show();
+    $('#video-modal iframe').attr('src','//www.youtube.com/embed/'+videoID+'?autoplay=1&autohide=1&modestbranding=1&rel=0&showinfo=0&wmode=transparent');
+    $('body').css('overflow','hidden').css('position','relative');
+  });
+  $('[rel="video-modal-close"]').click(function(event) {
+    $('#video-modal').hide();
+    $('#video-modal iframe').attr('src','');
+    $('body').css('overflow','visible').css('position','static');
+  });
+});
+
+</script>
+
+<br><br>-
+<br><br>-
+<br><br>-
+<br><br>-
 <section id="it-comes-down-to-impact" data-effect="fadeIn" data-width="fullwidth" class="page-id-20 entry-content normal-background  light    animated-fadeIn">
 <!--section id="a-purposeful-movement-2" data-effect="fadeIn" data-width="centered" class="page-id-14 entry-content normal-background  dark callout   animated-fadeIn"-->
 	<a class="ut-offset-anchor" id="section-it-comes-down-to-impact" name="section-it-comes-down-to-impact">it-comes-down-to-impact</a>
@@ -25,17 +54,17 @@ meta-description: Client Slider.
 <div class="client-slider">
 	<div class="slide-callout"><span>PURPOSE DRIVEN LEADERSHIP</span></div>
 	<div id="clientSliderHome" class="bxslider" style="overflow: hidden; height:650px;">
-		{% include client-slide.html name="Ann Rhoades" title="Founder/CEO, People Ink" title2="Former Chief People Officer, Southwest Airlines" img="2016/01/slidebg-ann.jpg" quotecallout="There was a time when it was only about the resume" quote="when searching for a leader. Y Scouts has literally redefined executive recruiting to assure we have the right leader driving the bus." %}
+		{% include client-slide.html name="Ann Rhoades" title="Founder/CEO, People Ink" title2="Former Chief People Officer, Southwest Airlines" img="2016/03/slidebg-ann.jpg" quotecallout="There was a time when it was only about the resume" quote="when searching for a leader. Y Scouts has literally redefined executive recruiting to assure we have the right leader driving the bus." %}
 
-		{% include client-slide.html name="Doug Rauch" title="CEO, Conscious Capitalism" title2="Former President, Trader Joe's Company" img="2016/02/slidebg-doug.jpg" quotecallout="Purpose-aligned, growth-minded leaders are the ones creating the future. " quote="If you're looking to create the best possible future, Y Scouts is the leadership search firm you'll need as your ally." %}
+		{% include client-slide.html name="Doug Rauch" title="CEO, Conscious Capitalism" title2="Former President, Trader Joe's Company" img="2016/03/slidebg-doug.jpg" quotecallout="Purpose-aligned, growth-minded leaders are the ones creating the future. " quote="If you're looking to create the best possible future, Y Scouts is the leadership search firm you'll need as your ally." %}
 
-		{% include client-slide.html name="Cameron Herold" title="Former COO 1-800-Got-Junk" title2="CEO Coach, Speaker and Author" img="2016/02/slidebg-cameronh.jpg" quotecallout="Y Scouts’ unique approach to recruiting talent is precisely why" quote=" I talk about them in every speaking event I do to CEOs all over North America." %}
+		{% include client-slide.html name="Cameron Herold" title="Former COO 1-800-Got-Junk" title2="CEO Coach, Speaker and Author" img="2016/03/slidebg-cameronh.jpg" quotecallout="Y Scouts’ unique approach to recruiting talent is precisely why" quote=" I talk about them in every speaking event I do to CEOs all over North America." %}
  
 	</div>
 </div>
 
 <!-- bxSlider Javascript file -->
-<script src="http://104.236.213.243/wp-content/uploads/jquery.bxslider.min.js"></script>
+<script src="http://yscouts.com/wp-content/uploads/jquery.bxslider.min.js"></script>
 
 <script>
 jQuery(document).ready(function(){
